@@ -2,7 +2,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
   font-family: "General-Sans-Variable", "Inter", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
@@ -12,6 +11,7 @@
   font-family: "General-Sans-Variable";
   src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
   font-style: normal;
+  font-display: swap;
 }
 
 @theme {
@@ -38,4 +38,8 @@
   --color-aa-black-800: oklch(0.39 0.0054 17.39);
   --color-aa-black-900: oklch(0.36 0.0042 17.35);
   --color-aa-black-950: oklch(0.19 0.0016 17.3);
+}
+
+body {
+  background-color: var(--color-aa-black-100);
 }
