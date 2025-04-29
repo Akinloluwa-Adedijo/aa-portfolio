@@ -1,70 +1,41 @@
 @import "tailwindcss";
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: "General-Sans-Variable", "Inter", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+@font-face {
+  font-family: "General-Sans-Variable";
+  src: url("/fonts/GeneralSans-Variable.woff2") format("woff2");
+  font-style: normal;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+@theme {
+  --color-aa-red-50: oklch(0.97 0.0129 17.38);
+  --color-aa-red-100: oklch(0.94 0.0309 17.72);
+  --color-aa-red-200: oklch(0.88 0.0616 18.39);
+  --color-aa-red-300: oklch(0.81 0.1047 20.33);
+  --color-aa-red-400: oklch(0.73 0.1545 22.06);
+  --color-aa-red-500: oklch(0.64 0.2109 25.74);
+  --color-aa-red-600: oklch(0.58 0.2177 27.63);
+  --color-aa-red-700: oklch(0.51 0.193 27.85);
+  --color-aa-red-800: oklch(0.45 0.1624 27.24);
+  --color-aa-red-900: oklch(0.4 0.1343 26.24);
+  --color-aa-red-950: oklch(0.26 0.0908 26.36);
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  --color-aa-black-50: oklch(0.97 0.0011 17.18);
+  --color-aa-black-100: oklch(0.93 0.0011 17.18);
+  --color-aa-black-200: oklch(0.86 0.0036 354.71);
+  --color-aa-black-300: oklch(0.75 0.0048 0.04);
+  --color-aa-black-400: oklch(0.62 0.0073 5.75);
+  --color-aa-black-500: oklch(0.53 0.0077 5.82);
+  --color-aa-black-600: oklch(0.47 0.0079 5.88);
+  --color-aa-black-700: oklch(0.42 0.0053 17.37);
+  --color-aa-black-800: oklch(0.39 0.0054 17.39);
+  --color-aa-black-900: oklch(0.36 0.0042 17.35);
+  --color-aa-black-950: oklch(0.19 0.0016 17.3);
 }
