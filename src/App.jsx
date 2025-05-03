@@ -11,7 +11,6 @@ function App() {
               Frontend Developer & Designer
             </h2>
           </div>
-
           <div className="uppercase text-2xl font-semibold text-aa-black-100">
             Website in Progress
           </div>
@@ -20,6 +19,7 @@ function App() {
             <ul className="flex gap-4">
               <li>
                 <a
+                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
                   href="mailto:adedijoakinloluwa@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -27,8 +27,10 @@ function App() {
                   Email
                 </a>
               </li>
+
               <li>
                 <a
+                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
                   href="https://www.linkedin.com/in/akinloluwa-adedijo-a362b2177/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -38,6 +40,7 @@ function App() {
               </li>
               <li>
                 <a
+                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
                   href="https://github.com/Akinloluwa-Adedijo"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -47,6 +50,7 @@ function App() {
               </li>
               <li>
                 <a
+                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
                   href="https://www.instagram.com/dsign.ak/"
                   target="_blank"
                   rel="noopener noreferrer"
