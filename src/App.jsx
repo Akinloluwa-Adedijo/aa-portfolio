@@ -20,7 +20,7 @@ function App() {
               <li>
                 <a
                   className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
-                  href="mailto:adedijoakinloluwa@gmail.com"
+                  href="mailto:info@aadedijo.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
