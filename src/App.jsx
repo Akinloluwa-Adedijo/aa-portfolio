@@ -1,3 +1,19 @@
+const connectLinks = [
+  { name: "Email", href: "mailto:info@aadedijo.com" },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/akinloluwa-adedijo-a362b2177/",
+  },
+  {
+    name: "Github",
+    href: "https://github.com/Akinloluwa-Adedijo",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/dsign.ak/",
+  },
+];
+
 function App() {
   return (
     <>
@@ -15,49 +31,24 @@ function App() {
             Website in Progress
           </div>
           <div className="w-full flex flex-col md:flex-row md:justify-between gap-3 text-aa-black-100">
-            <p className="font-bold">Connect with me</p>
+            <p className="font-semibold">Connect with me</p>
             <ul className="flex gap-4">
-              <li>
-                <a
-                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
-                  href="mailto:info@aadedijo.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Email
-                </a>
-              </li>
-
-              <li>
-                <a
-                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
-                  href="https://www.linkedin.com/in/akinloluwa-adedijo-a362b2177/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Linkedln
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
-                  href="https://github.com/Akinloluwa-Adedijo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
-                  href="https://www.instagram.com/dsign.ak/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                </a>
-              </li>
+              {connectLinks.map((connect, index) => {
+                return (
+                  <>
+                    <li key={index}>
+                      <a
+                        className="text-aa-black-100 hover:text-aa-red-400 transition duration-150"
+                        href={connect.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {connect.name}
+                      </a>
+                    </li>
+                  </>
+                );
+              })}
             </ul>
           </div>
         </section>
