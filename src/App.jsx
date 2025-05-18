@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 const connectLinks = [
   { name: "Email", href: "mailto:info@aadedijo.com" },
   {
@@ -17,6 +18,7 @@ const connectLinks = [
 function App() {
   return (
     <>
+      <Analytics />
       <main className="min-h-screen flex flex-col items-center justify-center p-5">
         <section className=" bg-aa-black-950 flex flex-col items-start justify-between p-5 h-[500px] text-aa-red-400">
           <div className="flex flex-col md:flex-row gap-2">
